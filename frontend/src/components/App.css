@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+ body {
+  padding-top: 54px;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+    font-family: 'Roboto Slab', serif;
+  }
+}
+
+/* MAIN*/
+.main{
+  margin-top: 50px;
+  margin-bottom: 150px;
+  }
+
+/* CATEGORIES */
+.category-item{
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px;
+}
+.category-item-link{
+  color: #697784;
+  cursor: pointer;
+}
+
+/* POSTS */
+.post-info {
+  display: flex;
+  align-items: center;
+}
+
+/* COMMENTS */
+.comment-list{
+  margin-top: 20px;
+}
+.comment-icon{
+  font-size: 30px;
+  color: #697784;
+  margin: 0 10px;
+}
+  
+/* FOOTER */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* CARDS */ 
+.card:hover {
+  box-shadow: 0px 20px 13px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.02, 1.02);
+}
+.card-title{
+  font-weight: 600;
+  color: #697784;
+}
+.card-footer > span{
+  font-size: 27px;
+  text-transform: uppercase;
+}
+.trash-icon, .edit-icon {
+  cursor: pointer;
+  font-size: 27px;
+  color: #697784;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.trash-icon:hover, .edit-icon:hover {
+  color: rgb(23, 211, 236);
+  cursor: pointer;
+}
+
+/* SORTYBY*/
+.sortyBy {
+  float:right;
+}
+
+[type='radio'] {
+  display: none; 
+}
+
+/* FORM */ 
+.formBtn{
+  margin-top: 20px;
+}
+
+/* VOTESCORE*/
+.vote-up-down {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.vote-up-down > .vote-icon {
+  cursor: pointer;
+  color: #B9B9B9;
+}
+.vote-up-down > .vote-score-negative {
+  background: #EF5350;
+}
+.vote-up-down > .vote-score-positive {
+  background: #66BB6A;
+}
+.score-initial {
+  margin-top: 50px;
+}
+.vote-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+span {
+  margin: 0 10px 0 10px;
+  font-size: 18px !important;
+}
+.vote-icon-up, .vote-icon-down {
+  cursor: pointer;
+  font-size: 27px;
+  color: #697784;
+}
+.vote-icon-up:hover {
+  color: rgb(23, 211, 236);
+  cursor: pointer;
+}
+.vote-icon-down:hover {
+  color: #EC176C;
+  cursor: pointer;
+}
+.counter-vote{
+  margin-bottom: 5px;
+}
+
+/* NOT FOUND*/
+.content-not-found {
+  font-size: 24px;
+}
+.content-not-found-icon {
+  font-size: 30px;
+  margin-left: 25%;
+  color: rgb(8, 8, 8);
+}
+#notfound {
+  position: relative;
+  height: 50vh;
+}
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.notfound {
+  max-width: 560px;
+  width: 100%;
+  padding-left: 160px;
+  line-height: 1.1;
+}
+.notfound .notfound-404 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  background-image: url('./img/emoji.png');
+  background-size: cover;
+}
+.notfound .notfound-404:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(2.4);
+      -ms-transform: scale(2.4);
+          transform: scale(2.4);
+  border-radius: 50%;
+  background-color: #f2f5f8;
+  z-index: -1;
+}
+.notfound h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #151723;
+  text-transform: uppercase;
+}
+.notfound h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  color: #151723;
+}
+.notfound p {
+  font-family: 'Nunito', sans-serif;
+  color: #999fa5;
+  font-weight: 400;
+}
+.notfound a {
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #388dbc;
+}
+@media only screen and (max-width: 767px) {
+  .notfound .notfound-404 {
+    width: 110px;
+    height: 110px;
+  }
+  .notfound {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 110px;
+  }
+}
